@@ -4,7 +4,7 @@ const ProductPrice = (props) => {
   return (
     <div className="card">
       <img src={props.image} alt="Bouquet" />
-      <div className="label">on sale!</div>
+      <div className={props.sale ? "label active" : "label" } >on sale!</div>
       <h2>{props.name}</h2>
       <p>{props.description}</p>
       <p className="price">
