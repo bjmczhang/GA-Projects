@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+## Fancy Flowers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You've been hired to make the online store for Fancy Flowers - a new up-and-coming boutique florist!
 
-## Available Scripts
+They only have three products at the moment, and your colleague has already prepared some JSX for you to use in your `App` component.
 
-In the project directory, you can run:
+### Step 1
 
-### `npm start`
+Create a new React app and start it running:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+$ yarn create react-app fancy-florist
+$ cd fancy-florist
+$ yarn start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Open up the code and replace the JSX in the `App` componenent with this:
 
-### `npm test`
+```
+<div>
+  <h1>Fancy Florist</h1>
+  <ProductPrice
+    name="Congratulations Bouquet"
+    description="The perfect bouquet for a celebration such as a birthday or graduation."
+    price={70} />
+  <ProductPrice
+    name="Apology Bouquet"
+    description="You need something extra when you know you messed up."
+    price={150} />
+  <ProductPrice
+    name="Wedding Bouquet"
+    description="Beautiful collection of flowers to turn heads on your special day!"
+    price={200} />
+</div>
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Step 2
 
-### `npm run build`
+Create the `ProductPrice` component in a separate file `ProductPrice.js` and import it in `App.js` so that you can use it.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For each product, the site should include:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The name and description
+- The price as a clear dollar value e.g. `$70.00`
+- A button that says "Buy now!"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Optional Extensions
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Add styling! Add a `ProductPrice.css` file and import it. Make each product a separate box by adding a border and make the "Buy now!" button stand out.
+2. Add images for each product - passing in the image URL as a separate prop.
+3. Include a prop to indicate if the item is on sale: `sale={true}` or `sale={false}` and use it to add a red "on sale!" label to some products and not others.
