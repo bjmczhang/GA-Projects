@@ -1,0 +1,71 @@
+.teamCard {
+  width: 40rem;
+  height: 45rem;
+  background: white;
+  color: #281949;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem #28194970;
+}
+
+.teamName {
+  font-size: 14px;
+}
+
+.currentNum {
+  font-size: 12px;
+}
+
+.currentNum span {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+.btnGroup {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 30%;
+  padding: 2rem;
+  background: #6229e6;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.1s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: #834eff;
+}
+
+.btn-wicket {
+  width: 100%;
+  background: #efc94e;
+  color: black;
+}
+
+.btn-wicket:hover {
+  background: #ffdf76;
+}
+
+.result {
+  font-size: 4rem;
+  font-weight: 700;
+  color: orangered;
+  position: absolute;
+  bottom: 20rem;
+}

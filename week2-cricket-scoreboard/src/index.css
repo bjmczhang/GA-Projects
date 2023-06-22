@@ -1,0 +1,28 @@
+/* Asterisk Selector * Targets All Elements On a Webpage */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
