@@ -7,24 +7,6 @@ class TeamScore extends React.Component {
     wickets: 0,
   };
 
-  // doOneRun = () => {
-  //   if (this.state.wickets < 10) {
-  //     this.setState({ runs: this.state.runs + 1 });
-  //   }
-  // };
-
-  // doFourRuns = () => {
-  //   if (this.state.wickets < 10) {
-  //     this.setState({ runs: this.state.runs + 4 });
-  //   }
-  // };
-
-  // doSixRuns = () => {
-  //   if (this.state.wickets < 10) {
-  //     this.setState({ runs: this.state.runs + 6 });
-  //   }
-  // };
-
   updateRuns = (runsNum) => {
     this.setState({ runs: this.state.runs + runsNum });
   };
